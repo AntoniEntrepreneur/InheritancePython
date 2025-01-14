@@ -1,3 +1,7 @@
+enemyHP = 1000
+yourweapons = []
+yourmoney = 10000
+
 class Weapon:
 
     def __init__(self, name, range, material, damage, cost, weight):
@@ -12,7 +16,10 @@ class Weapon:
         pass
 
     def buy(self):
-        print(f"You buy a {self.name} for ${self.cost}")
+        if yourmoney >= self.cost:
+            yourmoney -= self.cost
+            print(f"You buy a {self.name} for ${self.cost}")
+            yourweapons.append(self)
 
     def examine(self):
         parameters = {
@@ -24,4 +31,14 @@ class Weapon:
         }
         print(f"These are the parameters of your weapon- {self.name}\n{parameters}")
 
+
 class Sword(Weapon):
+
+    def __init__(self, name, range, material, damage, cost, weight):
+        super().__init__(name, range, material, damage, cost, weight)
+
+    def attack(self):
+        print(f"You slash with your {self.name}")
+        enemy
+
+slasher = Sword("Slasher", 5, "wood", 5, 100, 7)
