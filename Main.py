@@ -65,8 +65,17 @@ class Weapon:
         global yourmoney, yourweapons
         if yourmoney >= self.cost:
             yourmoney -= self.cost
-            print(f"You buy a {self.name} for ${self.cost}")
+            print(f"You buy the {self.name} for ${self.cost}")
             yourweapons.append(self.name)
+        else:
+            print(f"You don't have enough money to buy {self.name}")
+
+    def sell(self):
+        global yourmoney, yourweapons
+        yourmoney += self.cost
+        print(f"You sell the {self.name} for ${self.cost}")
+        yourweapons.remove(self.name)
+
 
     def examine(self):
         parameters = {
@@ -111,16 +120,11 @@ slasher = Sword("Slasher", 1, "steel", 20, 100, 7, "medium")
 apollos_bow = Bow("Apollo's Bow", 200, "wood", 10, 200, 4, "low")
 excalibur = Sword("Excalibur", 1.5, "mystical_material", 200, 9000, 10, "high")
 
-check_enemyHP()
-apollos_bow.buy()
-check_enemyHP()
-
 running = True
 while running:
     if enemyHP <= 0:
         print("You have defeated your enemy!")
         running = False
     else:
-        time.sleep(2)
-        apollos_bow.attack(100)
-        check_enemyHP()
+        weapon_to_buy = str(input("What weapon do you want to buy"))
+        weapon_to_buy.lower().buy()
