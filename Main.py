@@ -19,4 +19,3 @@ class Weapon:
             "material" : self.material,
             "damage" : self.damage,
         }
-        print(f"It's a {self}")
