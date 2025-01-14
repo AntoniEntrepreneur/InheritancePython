@@ -18,4 +18,9 @@ class Weapon:
             "range" : self.range,
             "material" : self.material,
             "damage" : self.damage,
+            "cost" : self.cost,
+            "weight" : self.weight
         }
+        print(f"These are the parameters of your weapon- {self}\n{parameters}")
+
+sword = Weapon(1, "metal", 5, 1500, 10)
