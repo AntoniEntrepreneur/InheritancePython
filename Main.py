@@ -1,6 +1,7 @@
 class Weapon:
 
-    def __init__(self, range, material, damage, cost, weight):
+    def __init__(self, name, range, material, damage, cost, weight):
+        self.name = name
         self.range = range
         self.material = material
         self.damage = damage
@@ -11,7 +12,7 @@ class Weapon:
         pass
 
     def buy(self):
-        print(f"You buy a {self} for ${self.cost}")
+        print(f"You buy a {self.name} for ${self.cost}")
 
     def examine(self):
         parameters = {
@@ -21,6 +22,6 @@ class Weapon:
             "cost" : self.cost,
             "weight" : self.weight
         }
-        print(f"These are the parameters of your weapon- {self}\n{parameters}")
+        print(f"These are the parameters of your weapon- {self.name}\n{parameters}")
 
-sword = Weapon(1, "metal", 5, 1500, 10)
+class Sword(Weapon):
