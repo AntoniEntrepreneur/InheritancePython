@@ -121,6 +121,6 @@ while running:
         print("You have defeated your enemy!")
         running = False
     else:
-        check_enemyHP()
-        apollos_bow.attack(10)
+        time.sleep(2)
+        apollos_bow.attack(100)
         check_enemyHP()
