@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7066106-1ec1-49e2-b7ec-a5ffe46b3888" name="Changes" comment="Zmodyfikowano funkcję attack">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e7066106-1ec1-49e2-b7ec-a5ffe46b3888" name="Changes" comment="Ulepszono funkcjonalność">
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736843504566</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ulepszono funkcjonalność">
+      <option name="closed" value="true" />
+      <created>1736844226042</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736844226042</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +169,7 @@
     <MESSAGE value="Dodano zmienne" />
     <MESSAGE value="Zdefiniowano klasę BOW" />
     <MESSAGE value="Zmodyfikowano funkcję attack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmodyfikowano funkcję attack" />
+    <MESSAGE value="Ulepszono funkcjonalność" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ulepszono funkcjonalność" />
   </component>
 </project>

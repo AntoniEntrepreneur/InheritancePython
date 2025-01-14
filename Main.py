@@ -105,12 +105,22 @@ def check_enemyHP():
     print(f"Enemy's HP is at {enemyHP}")
 
 
-check_enemyHP()
 
-slasher = Sword("Slasher", 1, "steel", 20, 100, 7, "high")
+
+slasher = Sword("Slasher", 1, "steel", 20, 100, 7, "medium")
 apollos_bow = Bow("Apollo's Bow", 200, "wood", 10, 200, 4, "low")
-
-apollos_bow.buy()
-apollos_bow.attack(1000)
+excalibur = Sword("Excalibur", 1.5, "mystical_material", 200, 9000, 10, "high")
 
 check_enemyHP()
+apollos_bow.buy()
+check_enemyHP()
+
+running = True
+while running:
+    if enemyHP <= 0:
+        print("You have defeated your enemy!")
+        running = False
+    else:
+        check_enemyHP()
+        apollos_bow.attack(10)
+        check_enemyHP()
